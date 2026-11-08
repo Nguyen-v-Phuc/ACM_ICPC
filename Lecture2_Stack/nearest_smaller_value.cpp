@@ -14,7 +14,7 @@ void rtg()
     vector<int> res;
 
     for(int i = 0; i < n; i++) {
-        while(!st.empty() && v[st.top()] >= v[i]) {
+        while(!st.empty() && v[st.top()] >= v[i]) { // loại bỏ trực tiếp những số không thỏa mãn
             st.pop();
         }
         if(st.empty()) {
